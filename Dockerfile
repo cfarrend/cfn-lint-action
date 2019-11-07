@@ -12,6 +12,7 @@ LABEL "com.github.actions.color"="green"
 
 LABEL "maintainer"="Scott Brenner <scott@scottbrenner.me>"
 
+RUN apk update
 RUN apk --no-cache add python3
 RUN pip3 install cfn-lint
 
